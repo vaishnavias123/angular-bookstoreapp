@@ -1,0 +1,24 @@
+h3{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:15px;
+}
+div{
+        margin-top: 1px;
+        padding: 5px;
+        border: 1px solid aqua;
+        border-radius: 5px;
+        background-color: aqua;
+        margin-bottom:20px ;
+        
+    }
+label {
+        font-weight: bold;
+    }
+.book div{
+    margin-bottom: 10px;
+}
+.book label{
+    display: inline-block;
+    width: 100px;
+}

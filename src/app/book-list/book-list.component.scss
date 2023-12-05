@@ -1,0 +1,58 @@
+.row h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.table{
+    width: 10px;
+    height: 25px;
+    margin-bottom: 20px;
+    border-color: black;
+    border-collapse: collapse;
+    text-align: center;
+    
+    
+}
+.center{
+    margin-left: 0;
+    margin-right: 0;
+}
+.table thead th{
+    background-color:pink;
+    border: 1px solid black;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.table tbody td{
+    border: 1px solid aqua;
+    padding: 8px;
+    text-align: center;
+}
+.table tbody .btn{
+    padding:  6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.table tbody .btn-primary{
+    color:#fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.table tbody .btn-danger{
+    color: #fff;
+    background-color: #d9534f;
+    border-color:#d43f3a;
+}
+.table tbody .btn-view{
+    color: #fff;
+    background-color:#337ab7;
+    border-color: #2e6da4;
+}
