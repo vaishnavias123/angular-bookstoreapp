@@ -4,6 +4,7 @@ import { book } from '../book';
 import { ActivatedRoute,Router } from '@angular/router';
 import { error } from 'console';
 
+
 @Component({
   selector: 'app-update-book',
   templateUrl: './update-book.component.html',
@@ -22,7 +23,7 @@ export class UpdateBookComponent implements OnInit {
       this.book=data;
     },error=>console.log(error));
   }
-  onSubmit(){
+  onsubmit(){
     this.bookService.updatebook(this.id,this.book).subscribe(data=>{
       this.goTobooklist();
     },error=>console.log(error));

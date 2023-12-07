@@ -5,16 +5,18 @@
         <thead>
             
             <tr>
+                <th>Id</th>
                 <th>Title</th>
                 <th>Author</th>
                 <th>Category</th>
                 <th>Price</th>
-                <th>Totalcount</th>
+                <th>totalcount</th>
                 <th>Actions</th>
             </tr>
         </thead>
         <tbody>
             <tr *ngFor="let book of books ">
+                <td>{{book.id}}</td>
                 <td>{{book.title}}</td>
                 <td>{{book.author}}</td>
                 <td>{{book.category}}</td>

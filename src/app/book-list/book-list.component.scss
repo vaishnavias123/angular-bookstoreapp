@@ -4,12 +4,15 @@
     font-weight: 400;
 }
 .table{
-    width: 10px;
+    width: 40%;
     height: 25px;
     margin-bottom: 20px;
     border-color: black;
     border-collapse: collapse;
     text-align: center;
+   border-style: groove;
+   margin-left: 30%;
+   
     
     
 }
@@ -18,7 +21,7 @@
     margin-right: 0;
 }
 .table thead th{
-    background-color:pink;
+    background-color:wheat;
     border: 1px solid black;
     padding: 10px;
     text-decoration: none;

@@ -5,4 +5,5 @@ export class book{
     'author':string;
     'price':number;
     'totalcount':number;
+    
 }

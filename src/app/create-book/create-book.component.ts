@@ -4,6 +4,7 @@ import { BookService } from '../book.service';
 import { Router } from '@angular/router';
 import { error } from 'console';
 
+
 @Component({
   selector: 'app-create-book',
   templateUrl: './create-book.component.html',
@@ -18,7 +19,7 @@ export class CreateBookComponent implements OnInit {
   ngOnInit(): void {
   }
   savebook(){
-    this.bookService.createbook(this.book).subscribe (data=>{
+    this.bookService.createbook(this.book).subscribe(data=>{
       console.log(data);
       this.goTobooklist();
     },
@@ -27,9 +28,23 @@ export class CreateBookComponent implements OnInit {
   goTobooklist(){
     this.router.navigate(['/books']);
   }
-  onSubmit(){
+  formsubmit(){
+   console.log('form submited');
     console.log(this.book);
     this.savebook();
   }
+  randomnumber :number=0;
+  generateRandomNumber(){
+    this.bookService.createbook(this.book).subscribe(data=>{
+      
+     this.randomnumber=Math.floor(Math.random()*100)+1;
+     console.log(this.book);
+    },error=>console.log(error));
+     
+
+  }
+  
+  
+  
 
 }
