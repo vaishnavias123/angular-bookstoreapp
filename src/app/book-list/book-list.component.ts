@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./book-list.component.scss']
 })
 export class BookListComponent implements OnInit {
-  'books':book[];
+  books:book[]=[];
 
   constructor(private bookService:BookService,
     private router:Router) { }

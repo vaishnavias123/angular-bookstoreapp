@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { BookService } from '../book.service';
 import { book } from '../book';
@@ -23,7 +24,7 @@ export class UpdateBookComponent implements OnInit {
       this.book=data;
     },error=>console.log(error));
   }
-  onsubmit(){
+  onFormsubmit(){
     this.bookService.updatebook(this.id,this.book).subscribe(data=>{
       this.goTobooklist();
     },error=>console.log(error));

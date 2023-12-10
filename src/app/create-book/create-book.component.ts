@@ -18,31 +18,30 @@ export class CreateBookComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  savebook(){
-    this.bookService.createbook(this.book).subscribe(data=>{
-      console.log(data);
-      this.goTobooklist();
-    },
-    error=>console.log(error));
+  savebook():void{
+    this.bookService.createbook(this.book).subscribe(
+      (data:any)=>{
+        console.log('book saved successfully:',data);
+        this.goTobooklist();
+      },
+      (error:any)=>{
+        console.error('error while saving book:',error);
+      }
+    );
   }
-  goTobooklist(){
+  goTobooklist():void{
     this.router.navigate(['/books']);
   }
-  formsubmit(){
-   console.log('form submited');
+  onFormSubmit(){
     console.log(this.book);
     this.savebook();
+   this.router.navigate(['/book-list']);
   }
-  randomnumber :number=0;
-  generateRandomNumber(){
-    this.bookService.createbook(this.book).subscribe(data=>{
-      
-     this.randomnumber=Math.floor(Math.random()*100)+1;
-     console.log(this.book);
-    },error=>console.log(error));
-     
-
-  }
+ generatedId:number=0;
+ generateId():void{
+  this.generatedId++;
+ }
+  
   
   
   

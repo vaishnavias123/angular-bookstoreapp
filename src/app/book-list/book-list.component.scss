@@ -5,7 +5,7 @@
 }
 .table{
     width: 40%;
-    height: 25px;
+    height: 20px;
     margin-bottom: 20px;
     border-color: black;
     border-collapse: collapse;
@@ -29,15 +29,14 @@
     
 }
 .table tbody td{
-    border: 1px solid aqua;
-    padding: 8px;
+    border: 1px black;
+    padding: 20px;
     text-align: center;
 }
 .table tbody .btn{
-    padding:  6px 12px;
+    padding:  10px 15px;
     text-align: center;
     text-decoration: none;
-    display: flex;
     margin-bottom: 0;
     font-weight: 400;
     cursor: pointer;
